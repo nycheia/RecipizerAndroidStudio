@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.dgl.recipizeras.MainActivity">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/layout_relative_Main"
+        android:layout_width="412dp"
+        android:layout_height="602dp"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="0dp">
+
+        <Button
+            android:id="@+id/btn_recipeNav_Main"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="100dp"
+            android:text="@string/btn_recipeNav_Main"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btn_mealPlanNav_Main"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginEnd="94dp"
+            android:layout_marginStart="73dp"
+            android:enabled="false"
+            android:text="@string/btn_mealPlanNav_Main"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/btn_recipeNav_Main"
+            app:layout_constraintTop_toTopOf="@+id/btn_recipeNav_Main" />
+
+        <Button
+            android:id="@+id/btn_shopListNav_Main"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginBottom="247dp"
+            android:layout_marginTop="55dp"
+            android:enabled="false"
+            android:text="@string/btn_shopListNav_Main"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/btn_recipeNav_Main"
+            app:layout_constraintTop_toBottomOf="@+id/btn_recipeNav_Main" />
+
+        <Button
+            android:id="@+id/btn_settingsNav_Main"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginBottom="247dp"
+            android:layout_marginEnd="94dp"
+            android:enabled="false"
+            android:text="@string/btn_settingsNav_Main"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/btn_mealPlanNav_Main"
+            app:layout_constraintTop_toTopOf="@+id/btn_shopListNav_Main" />
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.constraint.ConstraintLayout>

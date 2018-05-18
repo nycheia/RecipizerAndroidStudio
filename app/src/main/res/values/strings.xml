@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">RecipizerAS</string>
+    <string name="btn_recipeNav_Main">Recipes</string>
+    <string name="btn_mealPlanNav_Main">Meal Plans</string>
+    <string name="btn_shopListNav_Main">Shopping List</string>
+    <string name="btn_settingsNav_Main">Settings</string>
+    <string name="btn_newRecipe_Recipes">New Recipe</string>
+    <string name="btn_editRecipe_ViewRecipe">Edit</string>
+    <string name="btn_shareRecipe_ViewRecipe">Share</string>
+</resources>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.dgl.recipizeras.ViewRecipeActivity">
+
+    <TextView
+        android:id="@+id/textRecipeName_ViewRecipe"
+        android:layout_width="357dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="3dp"
+        android:gravity="center_horizontal"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/ingredientListView_ViewRecipe"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Recipe Name" />
+
+    <ListView
+        android:id="@+id/ingredientListView_ViewRecipe"
+        android:layout_width="358dp"
+        android:layout_height="236dp"
+        android:layout_marginBottom="7dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/textRecipeDescription_ViewRecipe"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textRecipeName_ViewRecipe" />
+
+    <TextView
+        android:id="@+id/textRecipeDescription_ViewRecipe"
+        android:layout_width="359dp"
+        android:layout_height="108dp"
+        android:layout_marginBottom="7dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginTop="7dp"
+        app:layout_constraintBottom_toTopOf="@+id/textRecipeNote_ViewRecipe"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ingredientListView_ViewRecipe"
+        tools:text="Recipe Description" />
+
+    <TextView
+        android:id="@+id/textRecipeNote_ViewRecipe"
+        android:layout_width="359dp"
+        android:layout_height="32dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="14dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_editRecipe_ViewRecipe"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textRecipeDescription_ViewRecipe"
+        tools:text="Recipe Note" />
+
+    <Button
+        android:id="@+id/btn_editRecipe_ViewRecipe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="6dp"
+        android:enabled="false"
+        android:text="@string/btn_editRecipe_ViewRecipe"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn_shareRecipe_ViewRecipe"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textRecipeNote_ViewRecipe" />
+
+    <Button
+        android:id="@+id/btn_shareRecipe_ViewRecipe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="68dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="6dp"
+        android:enabled="false"
+        android:text="@string/btn_shareRecipe_ViewRecipe"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_editRecipe_ViewRecipe"
+        app:layout_constraintTop_toBottomOf="@+id/textRecipeNote_ViewRecipe" />
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.dgl.recipizeras.RecipeActivity">
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="355dp"
+        android:layout_height="452dp"
+        tools:layout_editor_absoluteX="3dp"
+        tools:layout_editor_absoluteY="2dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="7dp"
+        android:layout_marginEnd="105dp"
+        android:layout_marginStart="105dp"
+        android:enabled="false"
+        android:text="@string/btn_newRecipe_Recipes"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/listView" />
+</android.support.constraint.ConstraintLayout>
